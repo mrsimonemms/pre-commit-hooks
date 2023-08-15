@@ -1,0 +1,16 @@
+{
+  "template": "https://github.com/mrsimonemms/new",
+  "commit": "cf71b2b49b808f261bf59b8a6f083684521722f1",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "project_name": "pre-commit-hooks",
+      "description": "Reusable pre-commit hooks",
+      "_template": "https://github.com/mrsimonemms/new"
+    }
+  },
+  "directory": "blank",
+  "skip": [
+    ".git"
+  ]
+}
