@@ -1,0 +1,16 @@
+{
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.makefile-tools"
+      ],
+      "settings": {}
+    }
+  },
+  "features": {},
+  "image": "ghcr.io/mrsimonemms/devcontainers/full",
+  "name": "devcontainer",
+  "postCreateCommand": {
+    "cookieninja-cruft": "pip install cruft"
+  }
+}
