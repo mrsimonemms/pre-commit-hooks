@@ -4,6 +4,8 @@ Reusable pre-commit hooks
 
 <!-- toc -->
 
+* [Hooks](#hooks)
+  * [License-Eye](#license-eye)
 * [Contributing](#contributing)
   * [Open in Gitpod](#open-in-gitpod)
   * [Open in a container](#open-in-a-container)
@@ -11,6 +13,21 @@ Reusable pre-commit hooks
 <!-- Regenerate with "pre-commit run -a markdown-toc" -->
 
 <!-- tocstop -->
+
+## Hooks
+
+### License-Eye
+
+```yaml
+repos:
+  - repo: https://github.com/mrsimonemms/pre-commit-hooks
+    rev: "" # Use the ref you want to point at
+    hooks:
+      - id: license-eye
+```
+
+Add [SkyWalking-Eyes](https://github.com/apache/skywalking-eyes) and check that
+the files have the correct headers implemented.
 
 ## Contributing
 

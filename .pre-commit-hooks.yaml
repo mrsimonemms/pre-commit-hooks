@@ -1,0 +1,6 @@
+- id: license-eye
+  name: Validate license headers
+  description: Fix license headers using Apache SkyWalking-Eyes
+  language: script
+  entry: pre-commit-license-eye.sh
+  pass_filenames: false

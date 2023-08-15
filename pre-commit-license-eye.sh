@@ -1,3 +1,4 @@
+#!/usr/bin/env bash
 # Copyright 2023 Simon Emms <simon@simonemms.com>
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,10 +13,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-cruft-update:
-ifeq (,$(wildcard .cruft.json))
-	@echo "Cruft not configured"
-else
-	@cruft check || cruft update --skip-apply-ask --refresh-private-variables
-endif
-.PHONY: cruft-update
+set -euo pipefail
+
+if ! command -v license-eye &> /dev/null; then
+  # Download the SkyWalking-Eyes binary
+  # @link https://github.com/apache/skywalking-eyes
+  go install github.com/apache/skywalking-eyes/cmd/license-eye@latest &> /dev/null
+fi
+
+license-eye header fix --verbosity error
