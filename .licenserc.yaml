@@ -1,7 +1,7 @@
 header:
   license:
     spdx-id: Apache-2.0
-    copyright-owner: Simon Emms <simon@simonemms.com>
+    copyright-owner: "Simon Emms <simon@simonemms.com>"
   paths-ignore:
     - dist
     - tmp
