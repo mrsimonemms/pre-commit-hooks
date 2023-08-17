@@ -1,6 +1,7 @@
 - id: license-eye
-  name: Validate license headers
-  description: Fix license headers using Apache SkyWalking-Eyes
-  language: script
-  entry: pre-commit-license-eye.sh
+  name: license-eye
+  additional_dependencies:
+    - github.com/apache/skywalking-eyes/cmd/license-eye@latest
+  entry: license-eye header fix --verbosity error
+  language: golang
   pass_filenames: false
