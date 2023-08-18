@@ -1,3 +1,45 @@
+- id: go-err-check
+  name: go errcheck
+  additional_dependencies:
+    - github.com/kisielk/errcheck@latest
+  entry: errcheck -abspath ./...
+  language: golang
+  pass_filenames: false
+
+- id: gofumpt
+  name: gofumpt
+  additional_dependencies:
+    - mvdan.cc/gofumpt@latest
+  entry: gofumpt -l -w
+  language: golang
+  types:
+    - go
+
+- id: go-fmt-import
+  name: go import/fmt
+  additional_dependencies:
+    - golang.org/x/tools/cmd/goimports@latest
+  entry: goimports -l -w
+  language: golang
+  types:
+    - go
+
+- id: go-static-check
+  name: go staticcheck
+  additional_dependencies:
+    - honnef.co/go/tools/cmd/staticcheck@latest
+  entry: staticcheck ./...
+  language: golang
+  pass_filenames: false
+
+- id: go-vet
+  name: go vet .
+  entry: go vet
+  language: golang
+  pass_filenames: false
+  types:
+    - go
+
 - id: license-eye
   name: license-eye
   additional_dependencies:
