@@ -47,3 +47,22 @@
   entry: license-eye header fix --verbosity error
   language: golang
   pass_filenames: false
+
+- id: packer-validate
+  name: Packer validate
+  entry: hashicorp/packer validate
+  args:
+    - .
+  files: (packer\.json|\.pkr\.hcl)$
+  language: docker_image
+  pass_filenames: false
+
+- id: packer-fmt
+  name: Packer format
+  entry: hashicorp/packer fmt
+  args:
+    - -recursive
+    - .
+  files: (\.pkr\.hcl)$
+  language: docker_image
+  pass_filenames: false

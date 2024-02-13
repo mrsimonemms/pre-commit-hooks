@@ -11,6 +11,8 @@ Reusable pre-commit hooks
   * [Go Static Check](#go-static-check)
   * [Go Vet](#go-vet)
   * [License-Eye](#license-eye)
+  * [Packer Format](#packer-format)
+  * [Packer Validate](#packer-validate)
 * [Contributing](#contributing)
   * [Open in Gitpod](#open-in-gitpod)
   * [Open in a container](#open-in-a-container)
@@ -105,6 +107,32 @@ repos:
 
 Add [SkyWalking-Eyes](https://github.com/apache/skywalking-eyes) and check that
 the files have the correct headers implemented.
+
+### Packer Format
+
+```yaml
+repos:
+  - repo: https://github.com/mrsimonemms/pre-commit-hooks
+    rev: "" # Use the ref you want to point at
+    hooks:
+      - id: packer-fmt
+```
+
+Run [Packer fmt](https://developer.hashicorp.com/packer/docs/commands/fmt)
+command.
+
+### Packer Validate
+
+```yaml
+repos:
+  - repo: https://github.com/mrsimonemms/pre-commit-hooks
+    rev: "" # Use the ref you want to point at
+    hooks:
+      - id: packer-validate
+```
+
+Run [Packer validate](https://developer.hashicorp.com/packer/docs/commands/validate)
+command.
 
 ## Contributing
 
