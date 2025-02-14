@@ -34,7 +34,7 @@
 
 - id: go-vet
   name: go vet .
-  entry: go vet
+  entry: go vet ./...
   language: golang
   pass_filenames: false
   types:
