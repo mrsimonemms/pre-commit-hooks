@@ -14,7 +14,6 @@ Reusable pre-commit hooks
   * [Packer Format](#packer-format)
   * [Packer Validate](#packer-validate)
 * [Contributing](#contributing)
-  * [Open in Gitpod](#open-in-gitpod)
   * [Open in a container](#open-in-a-container)
 
 <!-- Regenerate with "pre-commit run -a markdown-toc" -->
@@ -135,10 +134,6 @@ Run [Packer validate](https://developer.hashicorp.com/packer/docs/commands/valid
 command.
 
 ## Contributing
-
-### Open in Gitpod
-
-* [Open in Gitpod](https://gitpod.io/from-referrer/)
 
 ### Open in a container
 
