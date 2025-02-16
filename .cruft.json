@@ -1,13 +1,14 @@
 {
   "template": "https://github.com/mrsimonemms/new",
-  "commit": "8afffcf47ddd815fe80625dd013154e2b52174ca",
+  "commit": "c50867e179d66beb4963fb08865556dd3e91df2d",
   "checkout": null,
   "context": {
     "cookiecutter": {
       "project_name": "pre-commit-hooks",
       "description": "Reusable pre-commit hooks",
       "author": "Simon Emms <simon@simonemms.com>",
-      "_template": "https://github.com/mrsimonemms/new"
+      "_template": "https://github.com/mrsimonemms/new",
+      "_commit": "c50867e179d66beb4963fb08865556dd3e91df2d"
     }
   },
   "directory": "blank",
